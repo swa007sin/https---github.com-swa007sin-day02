@@ -1,0 +1,69 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day2</title>
+</head>
+<body>
+   <p>    
+    Q1) List 5 difference between Browser JS(console) v Nodejs
+<br>   NODE JS:
+<br>Node doesn’t have a predefined “window” object cause it doesn’t have a window to draw anything.
+“location” object is related to a particular url; that means it is for page specific. So, node doesn’t require that.
+Ofcourse Node doesn’t have “document” object also, cause it never have to render anything in a page.
+<br>Node has “global”, which is a predefined global object. It contains several functions that are not available in browsers, cause they are needed for server side works only.
+“require” object is predefined in Node which is used to include modules in the app.
+<br>Browser js(Console) :
+“window” is a predefined global object which has functions and attributes, that have to deal with window that has been drawn.
+“location” is another predefined object in browsers, that has all the information about the url we have loaded.
+“document”, which is also another predefined global variable in browsers, has the html which is rendered.
+<br>Browsers may have an object named “global”, but it will be the exact one as “window”.
+<br>Browsers don’t have “require” predefined. You may include it in your app for asynchronous file loading.
+Moduling is not mandatory in client side JavaScript, i.e. in browsers.
+
+<br>Q2) watch & summary 5 points - <br>https://www.youtube.com/watch?v=SmE4OwHztCc&ab_channel=JSConf
+<br>Ans: 
+<br>1)	 Parsing HTML:
+HTML  is forgiving by nature
+Parsing isn’t straight forward
+Can be halted
+Will do speculative parsing
+Its reentrant
+<br>2)	script,link & style
+Will halt the parser as a script can alter the document
+Network latency
+link & style could halt js execution
+<br>3)
+	<!-- <script/> at the bottom -->
+     Parse uninterrupted
+    Faster to render
+    defer and async attributes
+    Trade  off
+    <br>4)	DOM Node to RenderObject
+Visual output
+Geometric info
+Can layout and paint
+Hold style & computed matrices
+<br>5)	Calculating visual properties
+Combines all styles
+defaults, external, style elements & inline
+complexity around matching rules for each element
+Style computation
+
+<br>Q4) Execute the below code and write your description in txt file
+<br>a.	typeof(1)---- number
+<br>b.	typeof(1.1)----number
+<br>c.	typeof('1.1')-----string
+<br>d.	typeof(true)------boolean
+<br>e.	typeof(null)------object
+<br>f.	typeof(undefined)-----undefined
+<br>g.	typeof([])------object
+<br>h.	typeof({})------object
+<br>i.	typeof(NaN)------number
+
+
+
+    </p> 
+</body>
+</html>
